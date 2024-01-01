@@ -122,15 +122,14 @@ const songDur=(a,b)=>{
 
 const songName=(song)=>{
     let sName=document.querySelector(".details h4");
-    let playBarName=song.replace("https://udayreddy2608.github.io/YT-MUSIC-CLONE/","")
+    let playBarName=song.replace("http://127.0.0.1:5500/","")
     playBarName=playBarName.replaceAll("%20"," ")
     playBarName=playBarName.replaceAll(".mp3","")
     let list=playBarName.split("-")
     sName.innerText=playBarName;
-    let imgSrc="https://udayreddy2608.github.io/YT-MUSIC-CLONE/King Canyon"+".jpeg"
+    let imgSrc=list[1]+".jpeg"
     changeCover(imgSrc)
 }
-
 const changeCover=(img)=>{
     let cover=document.querySelector(".cover img");
     cover.style.display="block";
