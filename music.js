@@ -127,7 +127,7 @@ const songName=(song)=>{
     playBarName=playBarName.replaceAll(".mp3","")
     let list=playBarName.split("-")
     sName.innerText=playBarName;
-    let imgSrc=list[1]+".jpeg"
+    let imgSrc="https://udayreddy2608.github.io/YT-MUSIC-CLONE/King Canyon"+".jpeg"
     changeCover(imgSrc)
 }
 
