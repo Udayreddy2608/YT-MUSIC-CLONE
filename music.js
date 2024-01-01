@@ -122,7 +122,7 @@ const songDur=(a,b)=>{
 
 const songName=(song)=>{
     let sName=document.querySelector(".details h4");
-    let playBarName=song.replace("http://127.0.0.1:5500/","")
+    let playBarName=song.replace("https://udayreddy2608.github.io/YT-MUSIC-CLONE/","")
     playBarName=playBarName.replaceAll("%20"," ")
     playBarName=playBarName.replaceAll(".mp3","")
     let list=playBarName.split("-")
