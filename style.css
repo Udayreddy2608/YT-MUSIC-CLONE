@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Dancing+Script&family=Kanit:wght@800&family=Open+Sans:wght@300;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.05rem;
+}
+
+body{
+    background-color: black;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+.nav-left i{
+    font-size: 1.7rem;
+    color: gray;
+    margin-left: 20px;
+}
+
+i{
+    color: white;
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.console{
+    width: 100vw;
+    height: 80%;
+    display: flex;
+}
+
+.more i{
+    display: block;
+}
+
+.close i{
+    color: white;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.logo{
+    padding: 8px;
+}
+
+.search{
+    position: relative;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    width: 30vw;
+    min-width: 280px;
+    height: 30px;
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.161);
+    outline: none;
+    border-radius: 10px;
+    border: 0.7px solid gray;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+}
+
+.search i{
+    color: gray;
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    left: 15px;
+}
+
+.nav-right img{
+    filter: invert(1);
+}
+
+span{
+    color: white;
+}
+
+.nav-right{
+    gap: 10px;
+}
+
+.nav-right button{
+    border-radius: 20px;
+    outline:none;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    margin-right: 50px;
+    color: black;
+}
+
+.nav-right i{
+    filter: invert(1);
+    display: none;
+}
+
+.left{
+    width: 70px;
+    border-right: 0.1px solid gray;
+    height: 100%;
+    position: relative;
+}
+
+
+.hidden-menu{
+    width: 200px;
+    height: 100%;
+    z-index: 100;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border-right: 0.1px solid red;
+    top: 0;
+    left: -205px;
+    transition: 0.2s all ease-in;
+}
+
+.hidden-menu p{
+    font-size: 10px;
+    margin-left: 20px;
+    color: gray;
+}
+
+.hid-home{
+    display: flex;
+    width: 80%;
+    padding-left: 40px;
+    height: 50px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.hid-home:hover{
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+.options{
+    height: 40%;
+}
+
+.options p{
+    display: none;
+}
+
+.options{
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    justify-content: left;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.home a{
+    font-size: 8px;
+}
+
+.always{
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
+.home:hover{
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+#line{
+    width: 80%;
+    height: 0.5px;
+    background-color: gray;
+    margin: 20px;
+}
+
+.options button{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.087);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.options button:hover{
+    background-color: rgba(128, 128, 128, 0.362);
+}
+
+.options p{
+    color: gray;
+    font-size: 10px;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.player{
+    width: 100%;
+    height: 60px;
+    background-color: #3D3B40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    z-index: 100;
+    
+}
+
+.player p{
+    font-size: 10px;
+}
+
+
+#previous{
+    font-size: 20px;
+}
+
+#play{
+    font-size: 40px;
+}
+
+#pause{
+    font-size: 40px;
+    position: relative;
+    display: none;
+}
+
+.controls{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.cover img{
+    display: none;
+}
+
+
+.song-details{
+    display: flex;
+    gap: 10px;
+}
+
+.song-details h4{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.details p{
+    color: gray;
+}
+
+.cover img{
+    height: 45px;
+    width: 50px;
+    border-radius: 4px;
+}
+
+.thumbs{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.thumbs i{
+    color: gray;
+}
+
+.thumbs i:hover{
+    color: white;
+}
+
+.others{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.slider {
+    width: 100%;
+    height: 2px;
+    background: white;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+    background: #fbfcfc;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fbfcfc;
+    cursor: pointer;
+  }
+
+.right{
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-head button{
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 0.5px solid gray;
+    outline: none;
+    margin-right: 10%;
+}
+
+.song-card{
+    width: 350px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.song-card-name{
+    margin-top: 15px;
+}
+
+.song-card p{
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.singer{
+    color: gray;
+}
+
+.song-card img{
+    border-radius: 10px;
+    width: 40px;
+    padding: 5px;
+}
+
+.songs-list{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.right h4{
+    font-size: 13px;
+    font-weight: 200;
+    color: gray;
+}
+
+.main{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.progressbar{
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    position: relative;
+    bottom: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.prog-circ{
+    height: 10px;
+    width: 10px;
+    top: -3.5px;
+    background-color: red;
+    border-radius: 50%;
+    position:absolute;
+    left: 0%;
+    z-index: 1000;
+    transition: 1s all;
+}
+
+.play-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 2px;
+    
+}
+
+.volume i{
+    margin-left: 5px;
+}
+
+@media (max-width:1024px){
+    .search{
+        display: none;
+    }
+    .nav-right i{
+        color: black;
+        margin: 20px;
+        display: block;
+    }
+    .nav-right button{
+        margin-right: 10px;
+    }
+    .thumbs{
+        display: none;
+    }
+    .player h4{
+        font-size: 10px;
+    }
+
+    .player img{
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+
+    .controls p{
+        display: none;
+    }
+    #play{
+        font-size: 30px;
+    }
+    #previous{
+        font-size: 15px;
+    }
+    .player{
+        height: 50px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .console{
+        height: 82%;
+    }
+    .song-card{
+        width:280px;
+    }
+
+    .right{
+        margin-left: 10px;
+    }
+    #pause{
+        margin-left: 0px;
+    }
+    .cover img{
+       height: 30px;
+       width: 30px;
+    }
+}
+
